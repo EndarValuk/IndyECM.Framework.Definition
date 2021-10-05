@@ -39,6 +39,10 @@ export enum ObjectType {
    */
   Task = 6,
   /**
+   * Business process scheme, usually means BPMN diagram
+   */
+  BusinessProcess = 7,
+  /**
    * Knowledge base article
    */
   Article = 12,
