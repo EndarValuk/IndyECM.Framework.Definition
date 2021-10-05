@@ -1,0 +1,29 @@
+{
+  "name": "IndyECM.Framework.Definition",
+  "version": "1.0.0",
+  "description": "Definitions library for IndyECM",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "ts-types": " tsc --emitDeclarationOnly --outDir lib",
+    "build": "rimraf lib && node ./esbuild.js && npm run ts-types",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EndarValuk/IndyECM.Framework.Definition.git"
+  },
+  "keywords": [],
+  "author": "EndarValuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EndarValuk/IndyECM.Framework.Definition/issues"
+  },
+  "homepage": "https://github.com/EndarValuk/IndyECM.Framework.Definition#readme",
+  "devDependencies": {
+    "esbuild": "^0.13.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
+  }
+}
