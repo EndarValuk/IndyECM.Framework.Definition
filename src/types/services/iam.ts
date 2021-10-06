@@ -1,26 +1,25 @@
 /**
  * Identity and access management supported service types enumeration
  */
-export enum IamServiceType
-{
+export enum IamServiceType {
   /**
    * Always use anonymous access
    */
-  None,
+  None            = 0,
   /**
    * ActiveDirectory based
    */
-  ActiveDirectory,
+  ActiveDirectory = 1,
   /**
    * LDAP based
    */
-  LDAP,
+  LDAP            = 2,
   /**
    * DataStorage based
    */
-  DataStorage,
+  DataStorage     = 3,
   /**
    * OAuth based
    */
-  OAuth,
+  OAuth           = 4,
 }

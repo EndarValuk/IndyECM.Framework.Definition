@@ -1,7 +1,7 @@
 /**
  * Data storage supported providers enumeration
  */
-export enum DatabaseType
+export enum DatabaseServiceType
 {
   /**
    * SQL Server of any version

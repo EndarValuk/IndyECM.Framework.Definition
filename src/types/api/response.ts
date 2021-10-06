@@ -1,26 +1,25 @@
 /**
  * API host supported response types enumeration
  */
-export enum ApiResponseType
-{
+export enum ApiResponseType {
   /**
    * API will serve response as <see>application/json</see>
    */
-  Json,
+  Json     = 0,
   /**
    * API will serve response as <see>application/xml</see>
    */
-  Xml,
+  Xml      = 1,
   /**
    * API will serve response as <see>application/bson</see>
    */
-  Bson,
+  Bson     = 2,
   /**
    * API will serve response as <see>application/msgpack</see>
    */
-  MsgPack,
+  MsgPack  = 3,
   /**
    * API will serve response as <see>application/x-protobuf</see>
    */
-  ProtoBuf
+  ProtoBuf = 4,
 }
