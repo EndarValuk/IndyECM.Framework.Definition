@@ -1,13 +1,13 @@
 {
-  "name": "IndyECM.Framework.Definition",
-  "version": "1.0.0",
+  "name": "@indyecm/definitions",
+  "version": "0.0.1",
   "description": "Definitions library for IndyECM",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "ts-types": " tsc --emitDeclarationOnly --outDir lib",
-    "build": "rimraf lib && node ./esbuild.js && npm run ts-types",
+    "compile": " tsc --emitDeclarationOnly --outDir lib",
+    "build": "rimraf lib && node ./esbuild.js && npm run compile && cpx package.json lib && cpx README.md lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "devDependencies": {
     "esbuild": "^0.13.4",
     "rimraf": "^3.0.2",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.3",
+    "cpx": "^1.5.0"
   }
 }
